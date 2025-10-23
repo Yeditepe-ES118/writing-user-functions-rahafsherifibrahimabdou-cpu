@@ -5,7 +5,7 @@ def throw_rock(m, v0, theta):
     g = 9.81 #in m/s^2 
     theta = theta * np.pi / 180 #in rad 
     tf = 2 * v0 * np.sin(theta)/ g #in s 
-    R = v0 * 2 * np.sin(2*theta) / g #in m 
+    R = v0**2 * np.sin(2*theta) / g #in m 
     hm = v0**2 * np.sin(theta)**2 / (2*g) #in m 
     vh = v0 * np.cos(theta) #in m/s
     kh = 0.5 * m * vh * hm * 2 #in J\
